@@ -10,15 +10,16 @@ A React-based web app that compares two texts and highlights differences:
 - Clean and responsive UI
 
 ## Tech Stack
-- React
+- React (via Vite)
 - JavaScript
 - CSS
 
 ## Setup
 1. Clone the repo: `git clone <your-repo-url>`
-2. Install dependencies: `npm install`
-3. Start the app: `npm start`
-4. Open `http://localhost:3000` in your browser
+2. Navigate to the project folder: `cd text-diff-viewer`
+3. Install dependencies: `npm install`
+4. Start the dev server: `npm run dev`
+5. Open `http://localhost:5173` in your browser
 
 ## Usage
 1. Enter original text in the **Old Text** field
@@ -27,4 +28,3 @@ A React-based web app that compares two texts and highlights differences:
 
 ## License
 Open-source and free to use
-
