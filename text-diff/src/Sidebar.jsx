@@ -1,7 +1,16 @@
 import React from "react";
 import "./Sidebar.css";
 import logo from "./assets/logo.png";
+import seclogo from "./assets/check.png";
+import mic from "./assets/mic.png";
+import fifthlogo from "./assets/fifthlogo.png";
+import aligncenter from "./assets/align-center.png";
+import thirdlogo from "./assets/thirdlogo.png";
+import userlogo from "./assets/userlogo.png";
+
 function Sidebar() {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <div className="sidebar">
       <div className="logo">
@@ -17,14 +26,35 @@ function Sidebar() {
         />
         <span>ENAGRAM</span>
       </div>
-      <ul className="menu">
-        <li id="top">მთავარი</li>
-        <li className="active">ტექსტის შედარება</li>
-        <li id="bottom">ხმა → ტექსტი</li>
-        <li>ტექსტი → ხმა</li>
-        <li>PDF კონვერტაცია</li>
+      <button className="burger" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+      </button>
+      <ul className={`menu ${isOpen ? "open" : ""}`}>
+        <li id="top">
+          <img src={seclogo} alt="" />
+          მთავარი
+        </li>
+        <li className="active">
+          <img src={thirdlogo} alt="" />
+          ტექსტის შედარება
+        </li>
+        <li id="bottom">
+          <img src={mic} alt="" />
+          ხმა → ტექსტი
+        </li>
+        <li>
+          <img src={aligncenter} alt="" />
+          ტექსტი → ხმა
+        </li>
+        <li>
+          <img src={fifthlogo} alt="" />
+          PDF კონვერტაცია
+        </li>
       </ul>
-      <div className="user">თამარ ონიანი</div>
+      <div className="user">
+        <img src={userlogo} alt="" />
+        თამარ ონიანი
+      </div>
     </div>
   );
 }

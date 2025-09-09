@@ -121,3 +121,36 @@ textarea {
 .swap:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 516px) {
+  .top-bar {
+    flex-direction: column;
+  }
+  .options {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .options select {
+    width: 100%;
+    font-size: 18px;
+  }
+  .options label {
+    font-size: 18px;
+  }
+
+  .top-bar {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .checkbox {
+    width: 100%;
+  }
+  .checkbox button {
+    width: 100%;
+    align-items: stretch;
+    font-size: 18px;
+  }
+}

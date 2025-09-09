@@ -32,6 +32,13 @@
   list-style: none;
   transition: all 0.3s ease;
   background-color: #1f2a48;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.menu li img {
+  width: 25px;
+  height: 25px;
 }
 
 .sidebar .menu li.active {
@@ -65,5 +72,50 @@
   margin-top: 20px;
   font-size: 14px;
   border-top: 3px solid black;
-  padding: 20px 10px 10px 70px;
+  padding: 20px 10px 20px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.user img {
+  width: 22px;
+  height: 22px;
+}
+.burger {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .menu,
+  .user {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 250px;
+    background: #1f2a48;
+    flex-direction: column;
+    margin: 0;
+    border-top: 2px solid #000;
+    z-index: 100;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+  }
 }
