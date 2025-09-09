@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+import "./sidebar.css";
 import logo from "./assets/logo.png";
 import seclogo from "./assets/check.png";
 import mic from "./assets/mic.png";
