@@ -84,7 +84,6 @@
 .burger {
   display: none;
 }
-/* smooth transitions */
 .menu li {
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease,
     box-shadow 0.2s ease;
