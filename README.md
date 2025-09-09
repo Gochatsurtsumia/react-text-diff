@@ -1,4 +1,5 @@
 # Text Diff Viewer
+🔗 **[Live Demo](https://text-diff1.netlify.app/)**
 
 A React-based web app that compares two texts and highlights differences:  
 - **Red** → deleted words  
